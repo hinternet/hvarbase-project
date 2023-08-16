@@ -36,7 +36,7 @@
     "drupal/core-project-message": "^10",
     "webflo/drupal-finder": "~1.0",
     "webmozart/path-util": "~2.0",
-    "vardot/varbase_subprofile_basic": "9.0.x-dev",
+    "hinternet/hvarbase": "1.0.x-dev",
     "vardot/varbase-updater": "2.x-dev"
   },
   "config": {
