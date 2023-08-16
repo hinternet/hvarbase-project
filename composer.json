@@ -37,7 +37,8 @@
     "webflo/drupal-finder": "~1.0",
     "webmozart/path-util": "~2.0",
     "hinternet/hvarbase": "1.0.x-dev",
-    "vardot/varbase-updater": "2.x-dev"
+    "vardot/varbase-updater": "2.x-dev",
+    "vlucas/phpdotenv": "^5.0"
   },
   "config": {
     "allow-plugins": {
@@ -79,7 +80,7 @@
         "drupal/core"
       ],
       "locations": {
-        "web-root": "web/"
+        "web-root": "docroot/"
       }
     },
     "drupal-core-project-message": {
@@ -120,25 +121,25 @@
       "npm-asset"
     ],
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/profiles/{$name}": ["type:drupal-profile"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "web/libraries/slick": ["npm-asset/slick-carousel"],
-      "web/libraries/ace": ["npm-asset/ace-builds"],
-      "web/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
-      "web/libraries/jquery-bar-rating": ["npm-asset/jquery-bar-rating"],
-      "web/libraries/{$name}": [
+      "docroot/core": ["type:drupal-core"],
+      "docroot/profiles/{$name}": ["type:drupal-profile"],
+      "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+      "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+      "docroot/libraries/slick": ["npm-asset/slick-carousel"],
+      "docroot/libraries/ace": ["npm-asset/ace-builds"],
+      "docroot/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
+      "docroot/libraries/jquery-bar-rating": ["npm-asset/jquery-bar-rating"],
+      "docroot/libraries/{$name}": [
         "type:drupal-library",
         "type:bower-asset",
         "type:npm-asset"
       ],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {
-      "library-directory": "web/libraries",
+      "library-directory": "docroot/libraries",
       "libraries": [
         {"name": "objectfitpolyfill", "package": "bower-asset/objectfitpolyfill"},
         {"name": "chartjs", "package": "bower-asset/chartjs"},
