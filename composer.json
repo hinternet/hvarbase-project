@@ -28,7 +28,7 @@
         "php": ">=8.1",
         "composer/installers": "~1.0 || ~2.0",
         "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
-        "cweagans/composer-patches": "~1.0",
+        "cweagans/composer-patches": "^2.0",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-project-message": "^10",
         "webflo/drupal-finder": "~1.0",
