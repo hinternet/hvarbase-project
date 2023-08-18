@@ -22,9 +22,9 @@ done
 cp -f ./.env.dist ./.env;
 
 if [ "$WEB_SERVER" = "nginx" ]; then
-	sed ${SED_INLINE} '24,26 s/^#//' ./docker-compose.override.yml
+	sed ${SED_INLINE} "24,26 s/^#//" ./docker-compose.override.yml
 else
-	sed ${SED_INLINE} '28,30 s/^#//' ./docker-compose.override.yml
+	sed ${SED_INLINE} "28,30 s/^#//" ./docker-compose.override.yml
 fi
 
 printf "Enter your IDE [phpstorm]: ";
@@ -35,8 +35,8 @@ sed ${SED_INLINE} "15,15 s/$/${IDE}/" ./.env
 
 ### Set proper PHP image for macOS users
 if [ "$PROJECT_OS" = "macos" ]; then
-	sed ${SED_INLINE} '98,98 s/^/#/' ./.env
-	sed ${SED_INLINE} '104,104 s/^#//' ./.env
+	sed ${SED_INLINE} "98,98 s/^/#/" ./.env
+	sed ${SED_INLINE} "104,104 s/^#//" ./.env
 fi
 
 echo "==================================";
