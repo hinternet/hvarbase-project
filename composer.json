@@ -30,14 +30,16 @@
     },
     "require": {
         "php": ">=8.1",
+        "composer/installers": "~1.0 || ~2.0",
+        "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
+        "cweagans/composer-patches": "~1.0",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-project-message": "^10",
+        "webflo/drupal-finder": "~1.0",
         "webmozart/path-util": "~2.0",
         "hinternet/hvarbase": "1.0.x-dev",
         "drupal/vartheme_bs4": "^9.0",
         "vardot/varbase-updater": "2.x-dev",
-        "composer/installers": "^2.1",
-        "cweagans/composer-patches": "^2.0.0@beta",
         "drupal/admin_toolbar": "^3.3",
         "drupal/base_field_override_ui": "^1.1",
         "drupal/block_form_alter": "^2.0",
@@ -76,9 +78,7 @@
         "vlucas/seven": "^1.0",
         "drush/drush": "^12.1",
         "drupal/drush_language": "^1.0@RC",
-        "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.2"
     },
     "config": {
         "allow-plugins": {
