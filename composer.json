@@ -263,6 +263,14 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches-ignore": {
+            "drupal/varbase_core": {
+                "drupal/core": {
+                    "Issue #3080606: Reorder Layout Builder sections":
+                    "https://www.drupal.org/files/issues/2023-05-30/3080606-100.patch"
+                }
+            }
         }
     }
 }
