@@ -268,7 +268,7 @@
             "drupal/varbase_core": {
                 "drupal/core": {
                     "Issue #3080606: Reorder Layout Builder sections":
-                    "https://www.drupal.org/files/issues/2023-05-30/3080606-72.patch"
+                    "https://www.drupal.org/files/issues/2023-03-29/3080606-72.patch"
                 }
             }
         }
