@@ -66,7 +66,6 @@ _docker:
 
 _setup_drupal:
 	@echo "Setup Drupal files";
-	cp ./scaffold/templates/drupal/composer.json ./;
 	cp ./scaffold/templates/drupal/load.environment.php ./;
 	mkdir -p docroot/sites/default/files;
 	mkdir -p files-private;
