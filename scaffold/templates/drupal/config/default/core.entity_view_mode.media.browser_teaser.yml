@@ -1,0 +1,12 @@
+uuid: 7b0adc59-1275-4ee6-b33b-50b9bcebd8eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: '-oMzgOddi5PhBuMntAPYXqnfQS4DXTO5JQkUT49HtIA'
+id: media.browser_teaser
+label: 'Entity Browser Preview'
+targetEntityType: media
+cache: true

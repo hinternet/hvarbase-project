@@ -1,0 +1,10 @@
+uuid: bb1ed072-5245-4651-9129-1510a7a5f50e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VRxWCKNAzjpFAFNbDM366O9V11FCmlz2vFxp-7xIy1Q
+id: varbase_buttons_block
+label: Button(s)
+revision: 1
+description: 'A button block will contain a button with flexible styling.'

@@ -1,0 +1,12 @@
+uuid: fba126d4-6a79-45ab-8c0c-04346479c8ac
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 75VkPr7tJEyFMvaC06QcYwi3eX1duzAPmuOfLf6WZxU
+id: node.overlay_card_xlarge
+label: 'Overlay card - xlarge'
+targetEntityType: node
+cache: true

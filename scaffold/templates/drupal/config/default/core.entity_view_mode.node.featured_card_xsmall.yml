@@ -1,0 +1,12 @@
+uuid: 9222dc00-625f-4944-8bf6-765eb3932954
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 1BovxgJth1nDc_Qm-XCw78rnmw3DgkbeXqCiJeqIZN4
+id: node.featured_card_xsmall
+label: 'Featured card - xsmall'
+targetEntityType: node
+cache: true

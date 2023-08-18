@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: 6lQ55NXM9ysybMQ6NzJj4dtiQ1dAkOYxdDompa-r_kk
+  default_config_hash: wN-LHlMfgkryloRVhS9sFzLnRxCTmrM2mvin7USYS10
 langcode: es
-admin: ''
-default: claro
+admin: vartheme_claro
+default: vartheme_bs4

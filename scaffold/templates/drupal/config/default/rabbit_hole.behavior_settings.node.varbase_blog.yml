@@ -1,0 +1,15 @@
+uuid: edcf154b-acfc-4e12-ab84-536374232320
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.varbase_blog
+_core:
+  default_config_hash: DSbO0YmvUGVhvdqefaiUp2WyY-ue2mEP9S4HNCRg6D8
+id: node.varbase_blog
+targetEntityType: node
+bundle: varbase_blog
+action: display_page
+no_bypass: null
+bypass_message: null
+configuration: {  }

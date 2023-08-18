@@ -1,0 +1,29 @@
+uuid: aa3d53d9-f4b7-4e90-b883-248b9d537aef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.varbase_blog
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: Cy62EWPbxbbZGcrtU1m82Q5xoDeQFzWaxNbY4E4E2Hc
+id: node.varbase_blog.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: varbase_blog
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    yoast_seo:
+      focus_keyword: ''
+      status: ''
+    status: ''
+    focus_keyword: ''
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

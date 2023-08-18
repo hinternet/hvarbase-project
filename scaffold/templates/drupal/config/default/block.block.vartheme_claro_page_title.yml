@@ -1,0 +1,20 @@
+uuid: 0ac1c225-8ace-40c1-963f-528887d3bbda
+langcode: es
+status: true
+dependencies:
+  theme:
+    - vartheme_claro
+_core:
+  default_config_hash: Lod_D41uCr3rubgZY77VcpntagDVI9tVZJlstt8zg5U
+id: vartheme_claro_page_title
+theme: vartheme_claro
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

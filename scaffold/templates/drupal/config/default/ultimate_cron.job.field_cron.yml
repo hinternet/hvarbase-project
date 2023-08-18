@@ -1,0 +1,31 @@
+uuid: 112ebbea-f12b-45bc-9bda-a1b9f7561127
+langcode: es
+status: true
+dependencies:
+  module:
+    - field
+_core:
+  default_config_hash: qT6_9l0UnSmWMui2Km45A3BpChlvEDPRHtpuZqYvlMI
+title: 'Purga de los datos de la API de campo eliminados'
+id: field_cron
+weight: 0
+module: field
+callback: field_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '*/30+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

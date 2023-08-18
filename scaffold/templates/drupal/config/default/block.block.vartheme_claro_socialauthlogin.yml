@@ -1,0 +1,29 @@
+uuid: b6870832-c638-4240-abd4-434c85f89195
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - social_auth
+    - system
+  theme:
+    - vartheme_claro
+_core:
+  default_config_hash: bX-eG1eiLv0a52t3TN1lrSSn-XSVybfylNFUEMU32v4
+id: vartheme_claro_socialauthlogin
+theme: vartheme_claro
+region: content
+weight: -7
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Login with'
+  label_display: '0'
+  provider: social_auth
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user/login\r\n/user/register"

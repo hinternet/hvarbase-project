@@ -1,0 +1,17 @@
+uuid: 340eb9a9-725c-4a43-8cbf-7f6d11e62797
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: local
+description: 'Configuraciones que sólo se usan en local'
+weight: 1
+stackable: false
+storage: folder
+folder: ../config/local
+module:
+  dblog: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

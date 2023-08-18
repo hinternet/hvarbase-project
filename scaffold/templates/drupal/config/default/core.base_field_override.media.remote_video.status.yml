@@ -1,0 +1,24 @@
+uuid: e5c8ea0a-47b0-41ad-95e0-ff54bb90e153
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+_core:
+  default_config_hash: rpQQ6U6iXjdtpbhKxEXFTpvIinLSaoUvCcegMvJrO6I
+id: media.remote_video.status
+field_name: status
+entity_type: media
+bundle: remote_video
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

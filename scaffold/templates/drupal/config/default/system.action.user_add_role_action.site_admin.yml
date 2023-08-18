@@ -1,0 +1,14 @@
+uuid: f4eccb95-6321-4343-a17f-111936e7369a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.site_admin
+  module:
+    - user
+id: user_add_role_action.site_admin
+label: 'Add the Site Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: site_admin

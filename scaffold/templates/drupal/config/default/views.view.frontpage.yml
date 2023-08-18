@@ -1,6 +1,6 @@
-uuid: 0791cd34-da92-4e2d-bc7d-2959c0fd69b2
+uuid: 54bf0998-f801-43b0-8783-dacfc9c534c3
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
+  default_config_hash: b2DwG--_B-VgJNNWmShEa30-q5lbTJUrGytnq5JLu9c
 id: frontpage
 label: 'Página inicio'
 module: node
@@ -20,7 +20,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
@@ -75,7 +75,7 @@ display:
           plugin_id: text_custom
           label: ''
           empty: true
-          content: 'Aún no se ha creado ningún contenido de página de inicio. <br>Siga la<a target="_blank" href="https://www.drupal.org/es/docs/user_guide/es/index.html">Guía del usuario</a> para comenzar a construir su sitio.'
+          content: 'Todavía no se ha creado contenido para la portada.'
           tokenize: false
         node_listing_empty:
           id: node_listing_empty
@@ -98,7 +98,7 @@ display:
           plugin_id: title
           label: ''
           empty: true
-          title: ¡Bienvenidos!
+          title: 'Bienvenido a [site:name]'
       sorts:
         sticky:
           id: sticky
@@ -113,7 +113,6 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: sticky
           exposed: false
         created:
           id: created
@@ -128,7 +127,6 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: created
           exposed: false
           granularity: second
       arguments: {  }
@@ -153,8 +151,6 @@ display:
             description: ''
             use_operator: false
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -184,8 +180,6 @@ display:
           group: 1
           expose:
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
         langcode:
           id: langcode
           table: node_field_data
@@ -207,8 +201,6 @@ display:
             description: ''
             use_operator: false
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -285,28 +277,11 @@ display:
       path: rss.xml
       sitename_title: true
       displays:
-        page_1: page_1
         default: ''
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_1:
-    id: page_1
-    display_title: Página
-    display_plugin: page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: node
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

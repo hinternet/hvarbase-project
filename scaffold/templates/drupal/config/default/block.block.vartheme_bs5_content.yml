@@ -1,0 +1,22 @@
+uuid: 4158f76b-34eb-4298-af2e-c6e039844b99
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vartheme_bs5
+_core:
+  default_config_hash: NeHWMlGXNA7uZmi7oBqh-61q68SEU3kPSXzePyy7BXE
+id: vartheme_bs5_content
+theme: vartheme_bs5
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

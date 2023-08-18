@@ -1,0 +1,15 @@
+uuid: d3e86f83-ea3c-4e70-b5cf-b4c3fdb68401
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Contenido
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings: {  }

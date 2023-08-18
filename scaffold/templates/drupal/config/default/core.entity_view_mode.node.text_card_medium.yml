@@ -1,0 +1,12 @@
+uuid: 6fc53c70-ce1d-439a-9e54-7fdd0063eea0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: YcM4JRjycySL0IlqaWpfq1dg8fjGOaL4vyXfuqf4AmE
+id: node.text_card_medium
+label: 'Text card - medium'
+targetEntityType: node
+cache: true

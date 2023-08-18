@@ -1,0 +1,12 @@
+uuid: b6da961a-dc4c-4e0f-a419-70792163e893
+langcode: es
+status: true
+dependencies:
+  module:
+    - aggregator
+_core:
+  default_config_hash: 0LZvohlEB6FpI9Irz7wHVLBVKGcjHzhvI8mCzjHndrc
+id: aggregator_item.summary
+label: Resumen
+targetEntityType: aggregator_item
+cache: true

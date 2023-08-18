@@ -1,0 +1,38 @@
+uuid: 3bfccea3-f5c0-4a93-988e-a7ab88afce71
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.simplified
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_in_library
+    - media.type.audio
+  module:
+    - file
+_core:
+  default_config_hash: o171HbY6G6prLDAnn1reGGCV0C9Lv2wsgntCBLGWDtQ
+id: media.audio.simplified
+targetEntityType: media
+bundle: audio
+mode: simplified
+content:
+  field_media_audio_file:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  path: true
+  publish_on: true
+  publish_state: true
+  scheduler_settings: true
+  status: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true

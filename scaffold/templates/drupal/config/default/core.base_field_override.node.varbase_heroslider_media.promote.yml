@@ -1,0 +1,24 @@
+uuid: 8ad82f11-a488-4f5f-ba37-dca6939571d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.varbase_heroslider_media
+_core:
+  default_config_hash: tpKIltT_h6cbLhge4wQB-Hr5r4m3XyR2IAB7dMMiyck
+id: node.varbase_heroslider_media.promote
+field_name: promote
+entity_type: node
+bundle: varbase_heroslider_media
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

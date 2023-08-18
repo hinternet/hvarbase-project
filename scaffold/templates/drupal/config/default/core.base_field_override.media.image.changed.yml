@@ -1,0 +1,20 @@
+uuid: 00657bad-b344-46d4-9c22-49ec43857c10
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+_core:
+  default_config_hash: 5HVSmzFl909_BK78549b-yy0sAPGNL7UjNUM954_wUs
+id: media.image.changed
+field_name: changed
+entity_type: media
+bundle: image
+label: Modificado
+description: 'El momento en el cual el elemento multimedia fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,4 +1,4 @@
-uuid: 4f6268ab-da80-442f-97d3-7197b0c0cb74
+uuid: 2a54008c-d925-4cab-8ba7-c6ceafd44216
 langcode: es
 status: false
 dependencies:
@@ -19,7 +19,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:

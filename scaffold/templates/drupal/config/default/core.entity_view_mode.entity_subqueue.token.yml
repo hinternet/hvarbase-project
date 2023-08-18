@@ -1,0 +1,12 @@
+uuid: 6c4169df-8a9c-4956-b882-9d523b90ca1e
+langcode: es
+status: true
+dependencies:
+  module:
+    - entityqueue
+_core:
+  default_config_hash: Rw4MnFMi88rho7zJ-tMpU0QExz7lApq9XzxdHuB0IH8
+id: entity_subqueue.token
+label: Comodín
+targetEntityType: entity_subqueue
+cache: true

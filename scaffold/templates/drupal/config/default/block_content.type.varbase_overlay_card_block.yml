@@ -1,0 +1,10 @@
+uuid: 9fc1a221-6889-41f0-993b-5bb0bc11927d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7GG9gfzMqn_OMqaXuEnUULiJDzJH6IcxEnjQkYkBuf4
+id: varbase_overlay_card_block
+label: 'Overlay card'
+revision: 1
+description: 'A card block that contains background media and (title, body and link) fields.'

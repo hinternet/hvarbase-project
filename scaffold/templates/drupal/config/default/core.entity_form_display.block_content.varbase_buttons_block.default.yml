@@ -1,0 +1,27 @@
+uuid: b488942d-67c4-4f19-b04c-4b920a78b31b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_buttons_block
+    - field.field.block_content.varbase_buttons_block.field_buttons
+  module:
+    - varbase_buttons_block
+_core:
+  default_config_hash: rJQ3PlCHN0gtQRXqH5d7G31c56yngx5n0del94iqTic
+id: block_content.varbase_buttons_block.default
+targetEntityType: block_content
+bundle: varbase_buttons_block
+mode: default
+content:
+  field_buttons:
+    type: varbase_bootstrap_button_link_widget
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

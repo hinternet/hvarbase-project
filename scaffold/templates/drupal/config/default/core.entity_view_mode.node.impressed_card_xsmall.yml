@@ -1,0 +1,12 @@
+uuid: a65e299c-5f3f-4f6e-831a-03e98382425c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: StGE0fumWm11F9DmZcHhn4jIixF64y7xxGvt_T7FcYw
+id: node.impressed_card_xsmall
+label: 'Impressed card - xsmall'
+targetEntityType: node
+cache: true

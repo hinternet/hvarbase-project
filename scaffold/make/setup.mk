@@ -24,12 +24,12 @@ _clean:
 	rm -f ./phpunit* 2>&1
 	rm -f ./rector* 2>&1
 	rm -f ./traefik.toml 2>&1
-	rm -f ./web/sites/default/settings.* 2>&1
+	rm -f ./docroot/sites/default/settings.* 2>&1
 	rm -rf ./.lighthouseci* 2>&1
 	rm -rf ./.ssl 2>&1
 	rm -rf ./config 2>&1
 	rm -rf ./docs 2>&1
-	rm -rf ./web/sites/default/files 2>&1
+	rm -rf ./docroot/sites/default/files 2>&1
 	rm -rf ./files-private 2>&1
 	rm -rf ./scripts 2>&1
 	rm -rf ./tests/behat 2>&1
@@ -68,10 +68,10 @@ _setup_drupal:
 	@echo "Setup Drupal files";
 	cp ./scaffold/templates/drupal/composer.json ./;
 	cp ./scaffold/templates/drupal/load.environment.php ./;
-	mkdir -p web/sites/default/files;
+	mkdir -p docroot/sites/default/files;
 	mkdir -p files-private;
-	cp ./scaffold/templates/drupal/settings.php ./web/sites/default/;
-	cp ./scaffold/templates/drupal/settings.dev.php ./web/sites/default/settings.local.php;
+	cp ./scaffold/templates/drupal/settings.php ./docroot/sites/default/;
+	cp ./scaffold/templates/drupal/settings.dev.php ./docroot/sites/default/settings.local.php;
 	cp -r ./scaffold/templates/drupal/config ./
 	cp -r ./scaffold/templates/drupal/drush ./
 

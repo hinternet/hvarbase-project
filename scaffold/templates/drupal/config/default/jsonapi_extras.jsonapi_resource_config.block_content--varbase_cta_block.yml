@@ -1,0 +1,13 @@
+uuid: a720613f-a1b1-4691-9653-992eca19a5ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_cta_block
+_core:
+  default_config_hash: IXHJ43iWh43d0L361n9g_AHHuz70GzIqsAiBT-7AJy0
+id: block_content--varbase_cta_block
+disabled: true
+path: block_content/varbase_cta_block
+resourceType: block_content--varbase_cta_block
+resourceFields: {  }

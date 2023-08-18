@@ -1,0 +1,25 @@
+uuid: d5d406e7-4b86-432a-9ac8-3523ee495e0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_overlay_card_block
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: LMzcoN-le9F6sdYZhubhwGiGaBR0AQqbFi13YcPDxo4
+id: block_content.varbase_overlay_card_block.field_link
+field_name: field_link
+entity_type: block_content
+bundle: varbase_overlay_card_block
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

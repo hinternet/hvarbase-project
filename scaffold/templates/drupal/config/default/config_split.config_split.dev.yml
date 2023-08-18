@@ -1,0 +1,17 @@
+uuid: 383f3364-21b1-4fd7-abf4-29411c993443
+langcode: es
+status: true
+dependencies: {  }
+id: dev
+label: Develop
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/dev
+module:
+  dblog: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

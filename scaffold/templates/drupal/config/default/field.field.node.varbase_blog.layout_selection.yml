@@ -1,0 +1,23 @@
+uuid: b0d544ed-0b39-45c7-ad5e-b04c1eb161f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_selection
+    - node.type.varbase_blog
+_core:
+  default_config_hash: Tcp107cEGZIxPyHuc05or2ARtmszymqc-Dg3v13eCbo
+id: node.varbase_blog.layout_selection
+field_name: layout_selection
+entity_type: node
+bundle: varbase_blog
+label: Diseño
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

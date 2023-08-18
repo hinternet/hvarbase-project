@@ -1,0 +1,24 @@
+uuid: cab247ed-c805-4b1e-ae87-764f5a8645b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.file
+_core:
+  default_config_hash: msBL8N4SjfVUkKEXr0WUt04uQsoo31V29IuyooqXxC4
+id: media.file.status
+field_name: status
+entity_type: media
+bundle: file
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

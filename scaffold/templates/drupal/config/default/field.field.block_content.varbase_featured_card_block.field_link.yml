@@ -1,0 +1,25 @@
+uuid: 7c43f702-69c5-4e60-82e5-9cdfdfb4469c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_featured_card_block
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: W-lXpmLjEjUJHB_-wgFtRPiT_99MCnj_FoFOJpvLgVw
+id: block_content.varbase_featured_card_block.field_link
+field_name: field_link
+entity_type: block_content
+bundle: varbase_featured_card_block
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

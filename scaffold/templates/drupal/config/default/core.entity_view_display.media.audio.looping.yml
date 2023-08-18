@@ -1,0 +1,45 @@
+uuid: 9d180a10-6c1c-44e3-9f1c-f33ac4e1ef08
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.looping
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_in_library
+    - media.type.audio
+  module:
+    - ds
+    - file
+_core:
+  default_config_hash: XpJiXV7NaGRfDQNv6MRhZLAikmHcZ9FZvQWQ-x9zkvY
+id: media.audio.looping
+targetEntityType: media
+bundle: audio
+mode: looping
+content:
+  field_media_audio_file:
+    type: file_audio
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: true
+      multiple_file_display_type: tags
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

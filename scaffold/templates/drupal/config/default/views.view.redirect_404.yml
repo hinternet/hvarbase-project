@@ -1,14 +1,11 @@
-uuid: f30a3e1d-a28e-4aca-86de-5ee55ff1a955
 langcode: es
 status: true
 dependencies:
   module:
     - redirect_404
     - user
-_core:
-  default_config_hash: xEiwRlPcHIHzIa2IWKrMChHbyV62cH2lobBY0rHDsQA
 id: redirect_404
-label: 'Redireccionar 404'
+label: 'Redirect 404'
 module: views
 description: ''
 tag: ''
@@ -17,11 +14,11 @@ base_field: ''
 display:
   default:
     id: default
-    display_title: Máster
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
-      title: 'Arreglar páginas con error 404'
+      title: 'Fix 404 pages'
       fields:
         path:
           id: path
@@ -33,7 +30,7 @@ display:
           entity_type: null
           entity_field: null
           plugin_id: standard
-          label: Ruta
+          label: Path
           exclude: false
           alter:
             alter_text: false
@@ -82,7 +79,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: serialized
-          label: Número
+          label: Count
           exclude: false
           alter:
             alter_text: false
@@ -184,7 +181,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: date
-          label: 'último acceso'
+          label: 'Last accessed'
           exclude: false
           alter:
             alter_text: false
@@ -236,7 +233,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Idioma
+          label: Language
           exclude: false
           alter:
             alter_text: false
@@ -285,7 +282,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: redirect_404_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -338,19 +335,19 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Desplazamiento
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -371,7 +368,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No hay 404 errores que corregir.'
+          content: 'There are no 404 errors to fix.'
           tokenize: false
       sorts: {  }
       arguments: {  }
@@ -390,10 +387,12 @@ display:
           exposed: true
           expose:
             operator_id: path_op
-            label: Ruta
+            label: Path
             description: ''
             use_operator: false
             operator: path_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: path
             required: false
             remember: false
@@ -428,10 +427,12 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: langcode
             required: false
             remember: false
@@ -467,10 +468,12 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: Resuelto
+            label: Resolved
             description: ''
             use_operator: false
             operator: resolved_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: resolved
             required: false
             remember: false
@@ -506,7 +509,9 @@ display:
             count: count
             daily_count: daily_count
             timestamp: timestamp
-          default: count
+            langcode: langcode
+            redirect_404_operations: redirect_404_operations
+          default: timestamp
           info:
             path:
               sortable: true
@@ -536,6 +541,18 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            langcode:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            redirect_404_operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
           override: true
           sticky: false
           summary: ''
@@ -557,7 +574,7 @@ display:
       footer: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
@@ -566,16 +583,17 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Página
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:
       enabled: true
-      display_description: 'Enumera 404 rutas de error sin redirección asignada todavía.'
-      display_extenders: {  }
+      display_description: 'Lists 404 error paths with no redirect assigned yet.'
+      display_extenders:
+        metatag_display_extender: {  }
       path: admin/config/search/redirect/404
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url

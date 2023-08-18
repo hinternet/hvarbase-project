@@ -1,0 +1,19 @@
+uuid: 493f2af7-759b-4067-8e75-3e06aad38c06
+langcode: es
+status: true
+dependencies:
+  module:
+    - scheduler
+_core:
+  default_config_hash: pJi9bo1p7WtxAIux1-Hz_NRIM9RRmdVmR8qjCtmKZBc
+title: 'Manejador de cron por defecto'
+id: scheduler_cron
+weight: 0
+module: scheduler
+callback: scheduler_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,31 @@
+uuid: dfe67afb-40ba-4d0c-b2fe-a11325902b1a
+langcode: es
+status: true
+dependencies:
+  module:
+    - honeypot
+_core:
+  default_config_hash: C_RJYFKVan8-GTuSfprRmlyfySdOEdHCKhnsm0lrnnA
+title: 'Manejador de cron por defecto'
+id: honeypot_cron
+weight: 0
+module: honeypot
+callback: honeypot_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ 0 * * 0'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

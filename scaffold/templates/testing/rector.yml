@@ -9,8 +9,8 @@ imports:
 
 parameters:
   autoload_paths:
-    - 'web/core/modules'
-    - 'web/modules/contrib'
+    - 'docroot/core/modules'
+    - 'docroot/modules/contrib'
   exclude_paths:
     - '*/tests/*'
     - '*/Tests/*'

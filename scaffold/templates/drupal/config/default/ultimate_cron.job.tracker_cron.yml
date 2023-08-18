@@ -1,0 +1,17 @@
+uuid: 4e9e2c2c-429f-4815-98a6-9f6cbc940ac4
+langcode: es
+status: true
+dependencies:
+  module:
+    - tracker
+title: 'Update tracker index'
+id: tracker_cron
+weight: 0
+module: tracker
+callback: tracker_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

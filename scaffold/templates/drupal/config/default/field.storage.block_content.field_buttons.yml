@@ -1,0 +1,21 @@
+uuid: 997343a1-45e8-4bfd-bea7-0491c03d110d
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: 5HKUD4zOHadq3YRufdkEYk7hTZoq3zQfH2KhGgKagk0
+id: block_content.field_buttons
+field_name: field_buttons
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

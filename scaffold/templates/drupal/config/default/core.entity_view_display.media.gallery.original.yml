@@ -1,0 +1,115 @@
+uuid: e5e53402-3310-4cb8-b439-ebd3d2c90a86
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.media.original
+    - field.field.media.gallery.field_media_gallery
+    - field.field.media.gallery.field_media_in_library
+    - media.type.gallery
+  module:
+    - ds
+    - slick
+_core:
+  default_config_hash: 5X5YiOG_tE3dvfbogqrnuGvfm37A0MF1wzvG81Ox880
+id: media.gallery.original
+targetEntityType: media
+bundle: gallery
+mode: original
+content:
+  field_media_gallery:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        field_media_image: '0'
+        field_media_cover_image: '0'
+        field_media_oembed_video: '0'
+        field_media_video_file: '0'
+      optionset: varbase_gallery
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: true
+      layout: ''
+      view_mode: media_video_16_09
+      cache: 0
+      skin: classic
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: '0'
+      grid_medium: '0'
+      grid_small: '0'
+      breakpoints:
+        xs:
+          width: ''
+          image_style: ''
+        sm:
+          width: ''
+          image_style: ''
+        md:
+          width: ''
+          image_style: ''
+        lg:
+          width: ''
+          image_style: ''
+        xl:
+          width: ''
+          image_style: ''
+      current_view_mode: default
+      fx: ''
+      icon: ''
+      sizes: ''
+      grid_header: ''
+      _uri: ''
+      overridables:
+        arrows: arrows
+        autoplay: autoplay
+        infinite: infinite
+        dots: '0'
+        draggable: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: true
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: 0
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

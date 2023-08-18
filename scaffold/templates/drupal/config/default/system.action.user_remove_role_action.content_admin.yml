@@ -1,0 +1,14 @@
+uuid: dcf69887-9bb0-45cc-8168-5de709a8ef58
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.content_admin
+  module:
+    - user
+id: user_remove_role_action.content_admin
+label: 'Remove the Content Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_admin

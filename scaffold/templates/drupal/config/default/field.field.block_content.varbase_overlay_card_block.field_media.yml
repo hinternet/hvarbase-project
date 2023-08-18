@@ -1,0 +1,39 @@
+uuid: 9e8216c6-75be-4622-b1aa-ebcf4ed8e964
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_overlay_card_block
+    - field.storage.block_content.field_media
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+_core:
+  default_config_hash: z2_BY8MPdtoSphhgKnljbq-xZR2Gj6CO_KOqdXuvj1Q
+id: block_content.varbase_overlay_card_block.field_media
+field_name: field_media
+entity_type: block_content
+bundle: varbase_overlay_card_block
+label: Multimedia
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      file: file
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

@@ -1,10 +1,12 @@
-uuid: 67b0f3af-4784-4c7e-82ac-59e1df92a43a
+uuid: 1ddce169-ecdf-417b-b059-945179690220
 langcode: es
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: 4bWYX7aQyveXIE-cBSeWwmAlN0Q_p5b_1Ml88xlMniM
 id: media.token
-label: Token
+label: Comodín
 targetEntityType: media
 cache: true

@@ -1,0 +1,12 @@
+uuid: 1edff7be-c171-476f-b9a6-dcb0bebb4865
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: xEGLB9amKgZ-rQGV0tnHdrihtP8wGV5zTKfc9CsmnNA
+id: media.background_media
+label: 'Background media'
+targetEntityType: media
+cache: true

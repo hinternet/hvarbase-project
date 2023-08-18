@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: dmxA7NtHOelxQorTot6Qs6iy86PQ32PbxvpwmT8Rgts
+langcode: es
+types:
+  - organism
+statuses:
+  - READY
+  - BETA
+forbidden: {  }
+allowed: {  }

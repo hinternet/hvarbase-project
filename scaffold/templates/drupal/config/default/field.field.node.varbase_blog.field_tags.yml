@@ -1,0 +1,31 @@
+uuid: 4c9cb7a3-4c65-4d62-a1c6-a2e6f52abb5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.varbase_blog
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: O1zWol-FscW_6CDAIgd7Vc0X4YmuyESV4S0OQaggJ84
+id: node.varbase_blog.field_tags
+field_name: field_tags
+entity_type: node
+bundle: varbase_blog
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

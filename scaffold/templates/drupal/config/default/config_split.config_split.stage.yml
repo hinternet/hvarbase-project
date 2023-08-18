@@ -1,0 +1,17 @@
+uuid: cba1950e-cbe8-4bf7-b020-0ccc666a4c1a
+langcode: es
+status: true
+dependencies: {  }
+id: stage
+label: Pre-production
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/stage
+module:
+  dblog: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,281 @@
+uuid: 65a9e247-4d55-4861-a4d2-5d2d0d3f91b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.varbase_buttons_block
+    - block_content.type.varbase_carousel_block
+    - block_content.type.varbase_cta_block
+    - block_content.type.varbase_featured_card_block
+    - block_content.type.varbase_gallery_block
+    - block_content.type.varbase_heading_block
+    - block_content.type.varbase_impressed_card_block
+    - block_content.type.varbase_media_block
+    - block_content.type.varbase_overlay_card_block
+    - block_content.type.varbase_rich_text_block
+    - core.entity_view_display.node.landing_page_lb.default
+    - dashboards.dashboard.dashboard
+    - filter.format.code_html
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.file
+    - media.type.gallery
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.landing_page_lb
+    - node.type.page
+    - node.type.varbase_blog
+    - taxonomy.vocabulary.blog_categories
+    - taxonomy.vocabulary.tags
+    - user.role.authenticated
+    - user.role.content_admin
+    - user.role.editor
+    - user.role.seo_admin
+    - user.role.site_admin
+    - workflows.workflow.varbase_editorial_workflow
+    - workflows.workflow.varbase_simple_workflow
+  module:
+    - admin_audit_trail
+    - block
+    - block_class
+    - block_content
+    - coffee
+    - content_lock
+    - content_moderation
+    - contextual
+    - dashboards
+    - dropzonejs
+    - entity_browser
+    - entity_clone
+    - entityqueue
+    - file
+    - filter
+    - flood_control
+    - layout_builder
+    - masquerade
+    - media
+    - media_bulk_upload
+    - menu_admin_per_menu
+    - metatag
+    - moderation_sidebar
+    - node
+    - openapi
+    - path
+    - prevent_homepage_deletion
+    - redirect
+    - responsive_preview
+    - roleassign
+    - scheduler
+    - script_manager
+    - shortcut
+    - simple_sitemap
+    - statistics
+    - system
+    - taxonomy
+    - taxonomy_access_fix
+    - toolbar
+    - userprotect
+    - varbase_api
+    - varbase_core
+    - varbase_dashboards
+    - webform
+    - yoast_seo
+_core:
+  default_config_hash: Qf1sS6lCAIGUqVWVQtzndDvKqFHwaGVO8gh8z7sdAFY
+id: site_admin
+label: 'Site Admin'
+weight: -5
+is_admin: null
+permissions:
+  - 'access admin audit trail'
+  - 'access administration pages'
+  - 'access coffee'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access editor_media_browser entity browser pages'
+  - 'access editor_multiple_image_browser entity browser pages'
+  - 'access editor_multiple_media_browser entity browser pages'
+  - 'access files overview'
+  - 'access image_browser entity browser pages'
+  - 'access media overview'
+  - 'access media_browser entity browser pages'
+  - 'access multiple_image_browser entity browser pages'
+  - 'access multiple_media_browser entity browser pages'
+  - 'access openapi api docs'
+  - 'access responsive preview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access varbase dashboards comments'
+  - 'access varbase dashboards content'
+  - 'access varbase dashboards content in draft'
+  - 'access varbase dashboards content in drafts by user'
+  - 'access varbase dashboards recent changes'
+  - 'access varbase dashboards recent changes by user'
+  - 'access varbase dashboards recently created'
+  - 'access varbase dashboards recently created by user'
+  - 'access varbase dashboards terms'
+  - 'access varbase dashboards users'
+  - 'access varbase settings'
+  - 'access video_browser entity browser pages'
+  - 'access view api docs entity operation'
+  - 'access view json entity operation'
+  - 'access webform overview'
+  - 'administer account menu items'
+  - 'administer account settings'
+  - 'administer admin menu items'
+  - 'administer block classes'
+  - 'administer blocks'
+  - 'administer blog-menu menu items'
+  - 'administer flood unblock'
+  - 'administer footer menu items'
+  - 'administer main menu items'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer scripts'
+  - 'administer shortcuts'
+  - 'administer sitemap settings'
+  - 'administer taxonomy'
+  - 'administer tools menu items'
+  - 'administer users'
+  - 'assign roles'
+  - 'break content lock'
+  - 'can override dashboard dashboard'
+  - 'can view dashboard dashboard'
+  - 'clone block entity'
+  - 'clone block_content entity'
+  - 'clone media entity'
+  - 'clone menu_link_content entity'
+  - 'clone node entity'
+  - 'clone script entity'
+  - 'clone taxonomy_term entity'
+  - 'clone taxonomy_vocabulary entity'
+  - 'clone user entity'
+  - 'clone webform entity'
+  - 'configure all landing_page_lb node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create basic block content'
+  - 'create file media'
+  - 'create gallery media'
+  - 'create image media'
+  - 'create landing_page_lb content'
+  - 'create media'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in blog_categories'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create varbase_blog content'
+  - 'create varbase_buttons_block block content'
+  - 'create varbase_carousel_block block content'
+  - 'create varbase_cta_block block content'
+  - 'create varbase_featured_card_block block content'
+  - 'create varbase_gallery_block block content'
+  - 'create varbase_heading_block block content'
+  - 'create varbase_impressed_card_block block content'
+  - 'create varbase_media_block block content'
+  - 'create varbase_overlay_card_block block content'
+  - 'create varbase_rich_text_block block content'
+  - 'create video media'
+  - 'create webform'
+  - 'customize shortcut links'
+  - 'delete any audio media'
+  - 'delete any basic block content'
+  - 'delete any file media'
+  - 'delete any gallery media'
+  - 'delete any image media'
+  - 'delete any landing_page_lb content'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any remote_video media'
+  - 'delete any varbase_blog content'
+  - 'delete any varbase_buttons_block block content'
+  - 'delete any varbase_carousel_block block content'
+  - 'delete any varbase_cta_block block content'
+  - 'delete any varbase_featured_card_block block content'
+  - 'delete any varbase_gallery_block block content'
+  - 'delete any varbase_heading_block block content'
+  - 'delete any varbase_impressed_card_block block content'
+  - 'delete any varbase_media_block block content'
+  - 'delete any varbase_overlay_card_block block content'
+  - 'delete any varbase_rich_text_block block content'
+  - 'delete any video media'
+  - 'delete any webform submission'
+  - 'delete terms in blog_categories'
+  - 'delete terms in tags'
+  - delete_homepage_node
+  - 'dropzone upload files'
+  - 'edit any audio media'
+  - 'edit any basic block content'
+  - 'edit any file media'
+  - 'edit any gallery media'
+  - 'edit any image media'
+  - 'edit any landing_page_lb content'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any varbase_blog content'
+  - 'edit any varbase_buttons_block block content'
+  - 'edit any varbase_carousel_block block content'
+  - 'edit any varbase_cta_block block content'
+  - 'edit any varbase_featured_card_block block content'
+  - 'edit any varbase_gallery_block block content'
+  - 'edit any varbase_heading_block block content'
+  - 'edit any varbase_impressed_card_block block content'
+  - 'edit any varbase_media_block block content'
+  - 'edit any varbase_overlay_card_block block content'
+  - 'edit any varbase_rich_text_block block content'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit terms in blog_categories'
+  - 'edit terms in tags'
+  - 'edit webform assets'
+  - 'flood unblock ips'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
+  - 'masquerade as authenticated'
+  - 'masquerade as content_admin'
+  - 'masquerade as editor'
+  - 'masquerade as seo_admin'
+  - 'masquerade as site_admin'
+  - 'reorder terms in blog_categories'
+  - 'reorder terms in tags'
+  - 'revert all revisions'
+  - 'revert landing_page_lb revisions'
+  - 'revert page revisions'
+  - 'revert varbase_blog revisions'
+  - 'schedule publishing of nodes'
+  - 'switch shortcut sets'
+  - 'update any media'
+  - 'use media_bulk_upload bulk upload form'
+  - 'use moderation sidebar'
+  - 'use text format code_html'
+  - 'use text format full_html'
+  - 'use varbase_editorial_workflow transition archive'
+  - 'use varbase_editorial_workflow transition archived_published'
+  - 'use varbase_editorial_workflow transition create_new_draft'
+  - 'use varbase_editorial_workflow transition publish'
+  - 'use varbase_editorial_workflow transition review'
+  - 'use varbase_simple_workflow transition archive'
+  - 'use varbase_simple_workflow transition archived_published'
+  - 'use varbase_simple_workflow transition create_new_draft'
+  - 'use varbase_simple_workflow transition publish'
+  - 'use yoast seo'
+  - userprotect.protected_site_admin.bypass
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view landing_page_lb revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view post access counter'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view varbase_blog revisions'

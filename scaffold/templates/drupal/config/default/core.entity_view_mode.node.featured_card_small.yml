@@ -1,0 +1,12 @@
+uuid: de575337-d8b2-4329-83be-c6ae1dfb6870
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: dEL3uBwEV4EYe-a-p4eRqHHPAe8_aDhjzsirMIPbjQo
+id: node.featured_card_small
+label: 'Featured card - small'
+targetEntityType: node
+cache: true

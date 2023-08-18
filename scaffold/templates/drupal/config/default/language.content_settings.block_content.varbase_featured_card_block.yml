@@ -1,0 +1,13 @@
+uuid: d64f7388-4c88-4bbd-a2a9-c9acfdd2c713
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_featured_card_block
+_core:
+  default_config_hash: poqZaEwUSPToS1dQIymWtUNDJYghq9a88ImXLVJ9Dws
+id: block_content.varbase_featured_card_block
+target_entity_type_id: block_content
+target_bundle: varbase_featured_card_block
+default_langcode: site_default
+language_alterable: false

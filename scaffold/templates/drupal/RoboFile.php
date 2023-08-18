@@ -18,7 +18,7 @@ class RoboFile extends Tasks {
    * Setup sniffer options.
    */
   public function __construct() {
-    $this->sniffFilePatternsToExclude = '*.css,*.md,*.txt,*load.environment.php,*web/autoload.php,*scripts/composer/ScriptHandler.php,drush/Commands/PolicyCommands.php';
+    $this->sniffFilePatternsToExclude = '*.css,*.md,*.txt,*load.environment.php,*docroot/autoload.php,*scripts/composer/ScriptHandler.php,drush/Commands/PolicyCommands.php';
     $this->sniffTempFile = "/tmp/phpcs-fileset";
     $this->sniffArguments = "--standard=Drupal,DrupalPractice --colors -p --ignore='$this->sniffFilePatternsToExclude' -l";
   }

@@ -1,0 +1,19 @@
+uuid: e8da8c6c-435c-4e5a-a7fb-582d11a2b1a8
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: T7nUzYtsruuY5aLcUjyn9EVFs4bZGIzpbhwGld9oAqU
+title: 'Limpieza (cachés, lotes, inundaciones, archivos temporales, etc.)'
+id: system_cron
+weight: 0
+module: system
+callback: system_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

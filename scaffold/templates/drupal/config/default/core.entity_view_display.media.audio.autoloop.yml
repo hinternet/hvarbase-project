@@ -1,0 +1,37 @@
+uuid: c7152c0c-c407-4db3-b591-c38f8c7d131b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.autoloop
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_in_library
+    - media.type.audio
+  module:
+    - file
+_core:
+  default_config_hash: rK42MbcMo-LieBZAu5zpcGur5aOK6rMWvDh8sHfIptA
+id: media.audio.autoloop
+targetEntityType: media
+bundle: audio
+mode: autoloop
+content:
+  field_media_audio_file:
+    type: file_audio
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

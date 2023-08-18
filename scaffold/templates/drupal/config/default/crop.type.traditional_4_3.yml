@@ -1,0 +1,14 @@
+uuid: a5d3b271-b9ef-4263-97ce-d15c8caa6290
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6N2niAWusRIXN1b3_teFV6E4bPYyvwJbLhsWAJPZ7_0
+label: 'Traditional 4:3'
+id: traditional_4_3
+description: 'Traditional 4:3  television and computer monitor standard.'
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,16 +1,74 @@
-uuid: 5cd70244-7c56-4125-9840-af0d763b5fcf
+uuid: 6c0a0261-14bd-42fd-9d9e-dfc64f9f046f
 langcode: es
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+    - media.type.audio
+    - media.type.file
+    - media.type.gallery
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.landing_page_lb
+    - node.type.page
+    - taxonomy.vocabulary.blog_categories
+    - taxonomy.vocabulary.tags
   module:
+    - filter
+    - google_analytics
     - media
+    - node
+    - search
+    - shortcut
     - system
+    - taxonomy_access_fix
+    - tour
+    - userprotect
+    - varbase_dashboards
 _core:
-  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+  default_config_hash: NZ2N_FwKhSQkMQUGWZI8V9VH5ARsq5WDeG0V8LLg5NI
 id: authenticated
 label: 'Usuario autenticado'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access content'
+  - 'access shortcuts'
+  - 'access tour'
+  - 'access user profiles'
+  - 'access varbase dashboards content in drafts by user'
+  - 'access varbase dashboards recent changes by user'
+  - 'access varbase dashboards recently created by user'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own file media'
+  - 'delete own gallery media'
+  - 'delete own image media'
+  - 'delete own landing_page_lb content'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit own audio media'
+  - 'edit own file media'
+  - 'edit own gallery media'
+  - 'edit own image media'
+  - 'edit own landing_page_lb content'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'opt-in or out of google analytics tracking'
+  - 'search content'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
   - 'view media'
+  - 'view own unpublished media'
+  - 'view term names in blog_categories'
+  - 'view term names in tags'
+  - 'view terms in blog_categories'
+  - 'view terms in tags'

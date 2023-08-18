@@ -1,0 +1,12 @@
+uuid: e9c7f721-8c24-4b2d-a03a-d5f3efcc4ab0
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: qT4v-Ea244THaC-S8qv6JYmQ3xrRpnM3YJGTeUtcYsk
+id: media.media_video_04_03
+label: 'Media Video 4:3'
+targetEntityType: media
+cache: true

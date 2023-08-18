@@ -1,0 +1,12 @@
+uuid: e26d5cb2-ba48-4de7-80ff-5719259a3cd1
+langcode: es
+status: true
+dependencies:
+  module:
+    - crop
+_core:
+  default_config_hash: sEDKWW8PhNQCzGMRivqA5_dGr_kdHnbThsVjkgJOqaM
+id: crop.token
+label: Comodín
+targetEntityType: crop
+cache: true

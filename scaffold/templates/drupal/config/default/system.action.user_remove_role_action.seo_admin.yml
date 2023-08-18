@@ -1,0 +1,14 @@
+uuid: a0e9bbc5-dfac-4e06-a109-aaa767f6ec9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.seo_admin
+  module:
+    - user
+id: user_remove_role_action.seo_admin
+label: 'Remove the SEO Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: seo_admin

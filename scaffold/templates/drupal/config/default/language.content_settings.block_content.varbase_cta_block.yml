@@ -1,0 +1,13 @@
+uuid: 2d2f1940-6265-413b-a904-4a64b46d223e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_cta_block
+_core:
+  default_config_hash: FtdwyFnTwiRNSoxb96Z-oaOjGcmv2Qu39Ej4wVucBIU
+id: block_content.varbase_cta_block
+target_entity_type_id: block_content
+target_bundle: varbase_cta_block
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: b4e46012-09bc-4b29-afe7-0f322a4d6ca4
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: m47dpzUgPGIqlklFwO1tt3PZWNH2O-_UVQlsue6kbGA
+id: varbase_cta_block
+label: CTA
+revision: 1
+description: 'A CTA block contains a button link that navigates to the desired destination.'

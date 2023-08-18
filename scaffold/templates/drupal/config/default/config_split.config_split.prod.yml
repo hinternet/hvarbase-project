@@ -1,0 +1,16 @@
+uuid: 922f4315-9d87-44c8-86c8-19a0f2f78da5
+langcode: es
+status: true
+dependencies: {  }
+id: prod
+label: Production
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/prod
+module:
+  syslog: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

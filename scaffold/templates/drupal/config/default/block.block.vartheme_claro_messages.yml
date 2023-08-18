@@ -1,0 +1,22 @@
+uuid: 0be14c7a-89e7-46a2-88b9-2c69014cd332
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vartheme_claro
+_core:
+  default_config_hash: HUu3rZRI62Hhe2OD2Zld7q6h9pMLkCm5wUAsYhszXpk
+id: vartheme_claro_messages
+theme: vartheme_claro
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

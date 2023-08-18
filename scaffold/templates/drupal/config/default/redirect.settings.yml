@@ -1,10 +1,15 @@
 langcode: es
-_core:
-  default_config_hash: FEwQLW1wXW7fiJdG1B2bxW1c_-k6w-r-3V3bSsW6PqM
 auto_redirect: true
 default_status_code: 301
 passthrough_querystring: true
 warning: false
-ignore_admin_path: false
+ignore_admin_path: true
 access_check: false
 route_normalizer_enabled: true
+canonical: false
+nonclean_to_clean: true
+frontpage_redirect: true
+deslash: true
+normalize_aliases: true
+content_location_header: false
+term_path_handler: true

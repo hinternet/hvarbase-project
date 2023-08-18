@@ -1,0 +1,26 @@
+uuid: 5df5f858-9bd4-41e0-a459-b7171f21030f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.varbase_blog
+  module:
+    - text
+_core:
+  default_config_hash: 94A1KgR-MiC2s7wfyTjdMCvGxFxb4b9r05AAyQ3cU4E
+id: node.varbase_blog.body
+field_name: body
+entity_type: node
+bundle: varbase_blog
+label: Cuerpo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

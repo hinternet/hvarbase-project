@@ -1,0 +1,19 @@
+uuid: 2e30d890-fe42-4f23-85cc-c74cfacb0601
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: oHa4AO4u4tHHGrFL2yDahSlLtnX5kJLAwU54OalhoAE
+name: 'Hero slider'
+type: varbase_heroslider_media
+description: 'A rich hero slider that allows you to display video and/or image slides.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

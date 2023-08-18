@@ -1,0 +1,10 @@
+uuid: afb238c1-49c7-4c19-a1fa-b1ab06e3e360
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eLQXQD9C-dMAfypJY6dNKuutwKNPhIEloGpqdo8xl40
+id: varbase_html_code_block
+label: 'HTML code'
+revision: 1
+description: 'An HTML Code block contains a title and a body with an HTML text format.'

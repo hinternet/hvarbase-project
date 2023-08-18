@@ -1,0 +1,26 @@
+uuid: 791509f3-47a0-4699-8075-6d4d58453948
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_impressed_card_block
+    - field.storage.block_content.body
+  module:
+    - text
+_core:
+  default_config_hash: heZWLKlLtr0celSI3sqIjFi6HLRZEVoAByzcbMgUe5E
+id: block_content.varbase_impressed_card_block.body
+field_name: body
+entity_type: block_content
+bundle: varbase_impressed_card_block
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

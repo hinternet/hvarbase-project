@@ -1,16 +1,26 @@
-uuid: 91a5b8af-772e-4e3d-aac1-9ca35c4f3d1a
+uuid: 7cc030d3-831e-4c53-89a3-d1ee663221d6
 langcode: es
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.blog_categories
+    - taxonomy.vocabulary.tags
   module:
     - media
+    - search
     - system
+    - taxonomy_access_fix
 _core:
-  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+  default_config_hash: _faih6FngTk1EaNLZqB-CGe40QRJnyoW9Rtyq4cHZmI
 id: anonymous
 label: 'Usuario anónimo'
-weight: 0
+weight: -10
 is_admin: false
 permissions:
   - 'access content'
+  - 'search content'
   - 'view media'
+  - 'view term names in blog_categories'
+  - 'view term names in tags'
+  - 'view terms in blog_categories'
+  - 'view terms in tags'

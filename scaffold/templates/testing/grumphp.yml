@@ -64,7 +64,7 @@ grumphp:
     # drupalcheck: ~
     # phpcpd:
     #   directory:
-    #     - ./web/**/custom
+    #     - ./docroot/**/custom
     #   triggered_by:
     #     - php
     #     - inc

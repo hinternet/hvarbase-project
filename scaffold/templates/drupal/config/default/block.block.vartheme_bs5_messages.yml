@@ -1,0 +1,22 @@
+uuid: d921c202-91fb-446c-a7fd-d7a0560658c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vartheme_bs5
+_core:
+  default_config_hash: v-5MJhjF-GwHnN-OvBsc3-7kO77hy9YgAcjn6LS4h34
+id: vartheme_bs5_messages
+theme: vartheme_bs5
+region: content_above
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

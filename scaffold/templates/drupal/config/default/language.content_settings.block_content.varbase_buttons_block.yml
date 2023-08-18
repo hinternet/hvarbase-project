@@ -1,0 +1,13 @@
+uuid: 922e5709-d3ce-46d3-bab6-6df0e5dc06cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_buttons_block
+_core:
+  default_config_hash: dEU3Wp4c3XwRtcUb_IlvU_QOwXJ-yfhQ-3e_47LBhDI
+id: block_content.varbase_buttons_block
+target_entity_type_id: block_content
+target_bundle: varbase_buttons_block
+default_langcode: site_default
+language_alterable: false

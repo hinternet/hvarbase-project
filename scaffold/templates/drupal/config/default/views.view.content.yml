@@ -1,44 +1,104 @@
-uuid: 4bc3d5d4-a562-4910-aac3-c37feab458d8
+uuid: null
 langcode: es
 status: true
 dependencies:
   module:
+    - better_exposed_filters
     - node
     - user
-_core:
-  default_config_hash: 3ELwBpDb9lzqW5-daqjZYsC5lNcwbDS_i_-LKba12Lw
+    - views_bulk_operations
 id: content
-label: Contenido
+label: Content
 module: node
-description: 'Encontrar y administrar contenido.'
+description: 'Find and manage content.'
 tag: default
 base_table: node_field_data
 base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
-      title: Contenido
+      title: Content
       fields:
-        node_bulk_form:
-          id: node_bulk_form
-          table: node
-          field: node_bulk_form
-          entity_type: node
-          plugin_id: node_bulk_form
+        views_bulk_operations_bulk_form:
+          id: views_bulk_operations_bulk_form
+          table: views
+          field: views_bulk_operations_bulk_form
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: views_bulk_operations_bulk_form
           label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          batch: true
+          batch_size: 50
+          form_step: true
+          buttons: false
+          action_title: Action
+          clear_on_exposed: true
+          force_selection_info: false
+          selected_actions:
+            0:
+              action_id: 'entity:break_lock:node'
+              preconfiguration:
+                add_confirmation: false
+            3:
+              action_id: node_assign_owner_action
+              preconfiguration:
+                add_confirmation: false
+            7:
+              action_id: views_bulk_edit
+              preconfiguration:
+                add_confirmation: false
+                get_bundles_from_results: true
+            8:
+              action_id: views_bulk_operations_delete_entity
+            11:
+              action_id: 'entity:save_action:node'
+              preconfiguration:
+                add_confirmation: false
         title:
           id: title
           table: node_field_data
@@ -46,7 +106,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Título
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -69,7 +129,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-          label: 'Tipo de contenido'
+          label: 'Content type'
           exclude: false
           alter:
             alter_text: false
@@ -132,7 +192,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -150,7 +210,7 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: field
-          label: Estado
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +223,74 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 'Sin publicar'
-            format_custom_true: Publicado
+            format_custom_false: Unpublished
+            format_custom_true: Published
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          label: Created
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: short
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: 0
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +298,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -187,15 +313,6 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
-            tooltip:
-              date_format: long
-              custom_date_format: ''
-            time_diff:
-              enabled: false
-              future_format: '@interval hence'
-              past_format: '@interval ago'
-              granularity: 2
-              refresh: 60
         operations:
           id: operations
           table: node
@@ -204,7 +321,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -246,25 +363,149 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: true
+        field_yoast_seo:
+          id: field_yoast_seo
+          table: node__field_yoast_seo
+          field: field_yoast_seo
+          type: yoastseo_formatter
       pager:
         type: full
         options:
+          offset: 0
           items_per_page: 50
+          total_pages: null
+          id: 0
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
-            first: '« Primero'
-            last: 'Último »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: true
+            items_per_page_label: Items
+            items_per_page_options: '5, 10, 25, 50, 100'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
-        type: basic
+        type: bef
         options:
-          submit_button: Filtro
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            pager:
+              plugin_id: default
+              advanced:
+                is_secondary: false
+            filter:
+              status:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              type:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              title:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  collapsible: false
+                  is_secondary: false
+              langcode:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              created:
+                plugin_id: bef_datepicker
+                advanced:
+                  placeholder_text: ''
+                  collapsible: false
+                  is_secondary: false
+              created_1:
+                plugin_id: bef_datepicker
+                advanced:
+                  placeholder_text: ''
+                  collapsible: false
+                  is_secondary: false
+              uid:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+            status:
+              bef_format: default
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            type:
+              bef_format: default
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            title:
+              bef_format: default
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
+            langcode:
+              bef_format: default
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            created:
+              bef_format: bef_datepicker
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
+            created_1:
+              bef_format: bef_datepicker
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
       access:
         type: perm
         options:
@@ -278,52 +519,70 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'No hay contenido disponible.'
+          content: 'No content available.'
       sorts: {  }
       arguments: {  }
       filters:
-        title:
-          id: title
+        status_extra:
+          id: status_extra
           table: node_field_data
-          field: title
+          field: status_extra
+          entity_type: node
+          plugin_id: node_status
+          operator: '='
+          value: false
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: title
-          plugin_id: string
-          operator: contains
-          value: ''
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
           group: 1
           exposed: true
           expose:
-            operator_id: title_op
-            label: Título
+            operator_id: ''
+            label: Status
             description: ''
             use_operator: false
-            operator: title_op
+            operator: status_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: title
+            identifier: status
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
+          is_grouped: true
           group_info:
-            label: ''
+            label: 'Published status'
             description: ''
-            identifier: ''
+            identifier: status
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1:
+                title: Published
+                operator: '='
+                value: '1'
+              2:
+                title: Unpublished
+                operator: '='
+                value: '0'
         type:
           id: type
           table: node_field_data
@@ -340,7 +599,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Tipo de contenido'
+            label: 'Content type'
             description: ''
             use_operator: false
             operator: type_op
@@ -367,54 +626,48 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        status:
-          id: status
+        title:
+          id: title
           table: node_field_data
-          field: status
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          operator: '='
-          value: '1'
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: ''
-            label: Estado
+            operator_id: title_op
+            label: Title
             description: ''
             use_operator: false
-            operator: status_op
+            operator: title_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: status
+            identifier: title
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-          is_grouped: true
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
           group_info:
-            label: 'Estado de publicación'
+            label: ''
             description: ''
-            identifier: status
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1:
-                title: Publicado
-                operator: '='
-                value: '1'
-              2:
-                title: 'Sin publicar'
-                operator: '='
-                value: '0'
+            group_items: {  }
         langcode:
           id: langcode
           table: node_field_data
@@ -431,7 +684,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -458,18 +711,159 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        status_extra:
-          id: status_extra
+        created:
+          id: created
           table: node_field_data
-          field: status_extra
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: 'Created date (from)'
           entity_type: node
-          plugin_id: node_status
-          operator: '='
-          value: false
+          entity_field: created
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
           group: 1
+          exposed: true
           expose:
+            operator_id: created_op
+            label: 'Created date (from)'
+            description: ''
+            use_operator: false
+            operator: created_op
             operator_limit_selection: false
             operator_list: {  }
+            identifier: created_from
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              editor: '0'
+              content_admin: '0'
+              seo_admin: '0'
+              site_admin: '0'
+              administrator: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: 'Created date (to)'
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: created_1_op
+            label: 'Created date (to)'
+            description: ''
+            use_operator: false
+            operator: created_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: created_to
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              editor: '0'
+              content_admin: '0'
+              seo_admin: '0'
+              site_admin: '0'
+              administrator: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: uid
+          plugin_id: user_name
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: uid_op
+            label: 'Authored by'
+            description: ''
+            use_operator: false
+            operator: uid_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: uid
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              content_admin: '0'
+              seo_admin: '0'
+              site_admin: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -491,6 +885,8 @@ display:
             delete_node: delete_node
             dropbutton: dropbutton
             timestamp: title
+            operations: operations
+            created: created
           default: changed
           info:
             node_bulk_form:
@@ -547,6 +943,18 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             dropbutton:
               sortable: false
               default_sort_order: asc
@@ -591,26 +999,28 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'
   page_1:
     id: page_1
-    display_title: Página
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Contenido
+        title: Content
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Contenido
-        description: 'Encuentre y gestione el contenido'
+        title: Content
+        description: 'Find and manage content'
         weight: -10
         menu_name: admin
     cache_metadata:
@@ -623,4 +1033,5 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'

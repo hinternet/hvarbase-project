@@ -1,0 +1,13 @@
+uuid: b1545848-b086-4c26-8a0e-d5d1d2f61a54
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NpN6h2NAx8Fbgnr0OF0Pq_ydE1nQzCJj5VT5dd6n57U
+id: node_type_landing_page_lb
+targetEntityType: null
+bundle: null
+action: display_page
+no_bypass: null
+bypass_message: null
+configuration: {  }

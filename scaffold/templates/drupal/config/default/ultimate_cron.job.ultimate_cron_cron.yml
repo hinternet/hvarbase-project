@@ -1,0 +1,29 @@
+uuid: b9c6858c-cf5c-4a17-9788-6478cce8270d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JjtMO-WZAdg_dBCB5ZhMBC4L95ig9McoATI2wzkl6FE
+title: 'Ejecuta operaciones de limpieza internas'
+id: ultimate_cron_cron
+weight: 0
+module: ultimate_cron
+callback: ultimate_cron_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ */3 * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

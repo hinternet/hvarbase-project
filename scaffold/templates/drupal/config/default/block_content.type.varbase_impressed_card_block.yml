@@ -1,0 +1,10 @@
+uuid: aa1fd3c9-91cf-42d5-8781-39598c9335d2
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-qYs_ApxOfCzdPt37tZXQ1X1FQaaH3ot6zFOVc58dxo'
+id: varbase_impressed_card_block
+label: 'Impressed Card'
+revision: 1
+description: 'A vertical card contains (media, title, body and link) fields.'

@@ -1,0 +1,18 @@
+uuid: 7d739a50-8c10-4076-b6fd-3f4b469fd0ea
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KdZb0PTmzKpsd3eqDK0AzOrJ_odIAcf5BeQWmqY5xZ8
+id: vlb_col_4_four_equal_columns
+layout_id: blb_col_4
+label: 'Four equal columns'
+structure: '3 3 3 3'
+breakpoints:
+  breakpoint_lg: breakpoint_lg
+  breakpoint_md: breakpoint_md
+  breakpoint_xl: '0'
+  breakpoint_sm: '0'
+  breakpoint_xs: '0'
+default_breakpoints: null
+weight: -10

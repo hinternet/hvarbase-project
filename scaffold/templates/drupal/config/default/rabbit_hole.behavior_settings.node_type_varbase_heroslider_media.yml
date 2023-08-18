@@ -1,0 +1,13 @@
+uuid: aadd007d-34c9-4236-8a0a-ca46b5d240af
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lufyRYtjs0rQ8_J70jShNRt51oeC_Lt72IwDLMoeuFA
+id: node_type_varbase_heroslider_media
+targetEntityType: null
+bundle: null
+action: access_denied
+no_bypass: null
+bypass_message: null
+configuration: {  }

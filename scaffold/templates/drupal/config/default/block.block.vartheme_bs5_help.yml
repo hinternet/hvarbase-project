@@ -1,0 +1,22 @@
+uuid: 3ea8896d-b589-4a3f-89a7-920e3d16a078
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - vartheme_bs5
+_core:
+  default_config_hash: 5ysEmpBSbADmwGrugX384z9Z4DtJZ9s45M3Nv6D5vTk
+id: vartheme_bs5_help
+theme: vartheme_bs5
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: d0c14762-cb2c-4657-8379-05e687588a4a
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JV9kQu0aGrvx5dJmGQmSKsItqp3JxSRartpOqCmo-TQ
+id: breakpoint_lg
+label: 'Large devices (Desktops)'
+base_class: col-lg
+weight: -9

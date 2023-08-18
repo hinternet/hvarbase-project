@@ -1,0 +1,50 @@
+uuid: 2bd512ce-894d-4bba-b4c6-28b0c45f3ba3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.bulk_upload
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_in_library
+    - media.type.file
+  module:
+    - file
+_core:
+  default_config_hash: VjqEkcQ6v1E6RZA8E50nTkpgRFc7OPDUEl9n3LejtvI
+id: media.file.bulk_upload
+targetEntityType: media
+bundle: file
+mode: bulk_upload
+content:
+  field_media_file:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_media_in_library:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  name: true
+  path: true
+  publish_on: true
+  publish_state: true
+  scheduler_settings: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true

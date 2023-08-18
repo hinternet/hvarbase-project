@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: bo0DcveAaduKJdLP_075S9PT7pH9xdzETArl_432A10
+langcode: es
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+container_top_bar: contenedor
+container_content_above: contenedor
+container_content: contenedor
+container_content_below: contenedor
+container_footer_top: contenedor
+container_footer_bottom: contenedor
+email_logo_default: 0
+email_logo_path: ''
+email_logo_upload: {  }

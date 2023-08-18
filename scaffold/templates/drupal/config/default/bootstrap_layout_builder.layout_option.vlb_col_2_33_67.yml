@@ -1,0 +1,18 @@
+uuid: d6bee80f-ecd8-47d4-9c82-57c08707781b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lytAW0rk_JLorTjKIxtTyosu02dQB32eDjgX2lnieo8
+id: vlb_col_2_33_67
+layout_id: blb_col_2
+label: '33% 67%'
+structure: '4 8'
+breakpoints:
+  breakpoint_lg: breakpoint_lg
+  breakpoint_md: breakpoint_md
+  breakpoint_xl: '0'
+  breakpoint_sm: '0'
+  breakpoint_xs: '0'
+default_breakpoints: null
+weight: -8

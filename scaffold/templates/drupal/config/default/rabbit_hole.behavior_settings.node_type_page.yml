@@ -1,0 +1,13 @@
+uuid: 496d1690-dd45-4e7d-ae33-4e9ec3085f20
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CFALqljM7pVtOiWVTVZ-Hkfc-OZWPOFLZehVKXwkkR4
+id: node_type_page
+targetEntityType: null
+bundle: null
+action: display_page
+no_bypass: null
+bypass_message: null
+configuration: {  }

@@ -1,0 +1,10 @@
+uuid: 079b76e3-780f-4a94-9139-ce2526322829
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iyV-00CNYHNW2wBK5mrYCDQYGmj4rU0I6NBrC4mKxds
+id: blog-menu
+label: 'Blog menu'
+description: ''
+locked: false

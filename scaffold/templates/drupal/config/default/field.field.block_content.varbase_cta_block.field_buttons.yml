@@ -1,0 +1,25 @@
+uuid: 516aac4a-bf03-4150-8fac-ef1df78b89d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.varbase_cta_block
+    - field.storage.block_content.field_buttons
+  module:
+    - link
+_core:
+  default_config_hash: sFT73S0vm4GdA3OGup0JvljG3pIQQzHeHEwNc-Moh58
+id: block_content.varbase_cta_block.field_buttons
+field_name: field_buttons
+entity_type: block_content
+bundle: varbase_cta_block
+label: 'Call to action button(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,28 @@
+uuid: 167e143b-e11c-4944-a2da-1b4c8a688401
+langcode: es
+status: true
+dependencies:
+  module:
+    - social_auth
+    - system
+  theme:
+    - vartheme_bs4
+_core:
+  default_config_hash: p9fGfQUTE9mjwd_TM-FdOUfJwal5w6hj8i5ogL5_wQw
+id: vartheme_bs4_socialauthlogin
+theme: vartheme_bs4
+region: content
+weight: -7
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Login with'
+  label_display: '0'
+  provider: social_auth
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user/login\r\n/user/register"

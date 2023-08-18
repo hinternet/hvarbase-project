@@ -1,0 +1,31 @@
+uuid: 20885b83-9f23-48fa-9be6-abc64dc87bee
+langcode: es
+status: true
+dependencies:
+  module:
+    - persistent_login
+_core:
+  default_config_hash: YTr76ZA-CcF0xbGVm687Lu0ges07dS9ajXNdwILqj-4
+title: 'Manejador de cron por defecto'
+id: persistent_login_cron
+weight: 0
+module: persistent_login
+callback: persistent_login_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

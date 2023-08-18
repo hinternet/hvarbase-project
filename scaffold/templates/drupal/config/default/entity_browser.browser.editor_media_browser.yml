@@ -1,0 +1,84 @@
+uuid: 24de1b08-f9b1-4f8b-bfeb-35249149106e
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - media.type.video
+    - views.view.media_browsers
+  module:
+    - dropzonejs_eb_widget
+    - entity_browser_generic_embed
+    - media
+    - views
+_core:
+  default_config_hash: U0F6ALJxl_H3CKsDOG3q9AOHXtj7xAEn1y1BFsuS93M
+name: editor_media_browser
+label: 'Editor Media Browser'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '850'
+  link_text: 'Seleccionar medios'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  0ce5dbdc-76cf-4c4e-a020-03328ef20f1c:
+    id: view
+    uuid: 0ce5dbdc-76cf-4c4e-a020-03328ef20f1c
+    label: Librería
+    weight: -10
+    settings:
+      submit_text: 'Seleccionar medios'
+      auto_select: false
+      view: media_browsers
+      view_display: media_browser
+  0f828fb5-d820-46c1-9260-d706fe92b367:
+    id: embed_code
+    uuid: 0f828fb5-d820-46c1-9260-d706fe92b367
+    label: Incrustar
+    weight: -7
+    settings:
+      submit_text: 'Embed media'
+      form_mode: entity_browser
+  422803d7-21aa-471b-8d65-335f345c4e30:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 422803d7-21aa-471b-8d65-335f345c4e30
+    label: 'Subir imagen'
+    weight: -9
+    settings:
+      submit_text: 'Select image(s)'
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop image files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: 1.0
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: image
+      form_mode: entity_browser
+  c05a5c40-6a5e-4a45-a841-7ba471656952:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: c05a5c40-6a5e-4a45-a841-7ba471656952
+    label: 'Upload video'
+    weight: -8
+    settings:
+      submit_text: 'Select video(s)'
+      upload_location: 'public://videos/[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop video files here to upload them'
+      max_filesize: 128M
+      extensions: 'mp4 webm ogv'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: 1.0
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: video
+      form_mode: entity_browser

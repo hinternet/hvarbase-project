@@ -1,0 +1,18 @@
+uuid: a4043c39-1b33-4509-b501-ae28531e0c4e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZpAqbrghSmmdkOSZPipDM0e8DdZiHlWcHQ_MVYmQ1BY
+id: vlb_col_3_25_50_25
+layout_id: blb_col_3
+label: '25% 50% 25% '
+structure: '3 6 3'
+breakpoints:
+  breakpoint_lg: breakpoint_lg
+  breakpoint_md: breakpoint_md
+  breakpoint_xl: '0'
+  breakpoint_sm: '0'
+  breakpoint_xs: '0'
+default_breakpoints: null
+weight: -9
