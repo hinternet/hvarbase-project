@@ -76,7 +76,7 @@
         "drupal/aggregator": "^2.0",
         "drupal/quickedit": "^1.0",
         "drupal/seven": "^1.0",
-        "drush/drush": "^12.1",
+        "drush/drush": "*",
         "drupal/drush_language": "^1.0@RC",
         "vlucas/phpdotenv": "^5.1"
     },
