@@ -107,6 +107,10 @@
         "post-drupal-scaffold-cmd": [
             "Varbase\\composer\\ScriptHandler::postDrupalScaffoldProcedure",
             "VarbaseSubProfileBasic\\composer\\ScriptHandler::postDrupalScaffoldSubProfileProcedure"
+        ],
+        "install-drupal": [
+            "./scaffold/scripts/generate-salt.sh",
+            "./scaffold/scripts/enforce-permissions.sh"
         ]
     },
     "minimum-stability": "dev",
