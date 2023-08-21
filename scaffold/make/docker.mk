@@ -3,7 +3,7 @@
 default: up
 
 COMPOSER_ROOT ?= /var/www/html
-DRUPAL_ROOT ?= /var/www/html/web
+DRUPAL_ROOT ?= /var/www/html/docroot
 
 ifneq ($(OS),Windows_NT)
 	CURRENT_OS := $(shell uname)

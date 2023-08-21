@@ -95,6 +95,11 @@
             "drupal/core": "dist"
         }
     },
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
+    },
     "scripts": {
         "post-install-cmd": [
             "Varbase\\composer\\ScriptHandler::createRequiredFiles",
@@ -267,6 +272,14 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/google_analitics": {
+                "Cannot install from existing config": "https://www.drupal.org/files/issues/2023-08-07/google-analytics-issues-3373921-cannot-install-from-existing-config-11.patch"
+            },
+            "drupal/varbase_core": {
+                "Varbase modules have missing dependencies": "./patches/varbase_core/fix_dependencies.patch"
+            }
         },
         "patches-ignore": {
             "drupal/varbase_core": {
