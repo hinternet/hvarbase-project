@@ -274,7 +274,7 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/google_analitics": {
+            "drupal/google_analytics": {
                 "Cannot install from existing config": "https://www.drupal.org/files/issues/2023-08-07/google-analytics-issues-3373921-cannot-install-from-existing-config-11.patch"
             },
             "drupal/varbase_core": {
